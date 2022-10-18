@@ -1,0 +1,32 @@
+ 
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "Prisma is awesome!"
+}
+
+###
+PATCH http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+    "title": "Prisma is awesome!",
+    "tags": { "set": [{ "id": 1 }, { "id": 2 }], "create": { "name": "typescript" } }
+}
+
+
+###
+DELETE http://localhost:3000/posts/1
+
+###
+
+get http://localhost:3000/posts
+Content-Type: application/json
+
+
+###
+
+get http://localhost:3000/posts/1
+Content-Type: application/json
+

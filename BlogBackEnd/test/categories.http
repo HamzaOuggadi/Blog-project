@@ -1,0 +1,44 @@
+ 
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name":"testCat",
+    "articles":{
+        "create":
+        [
+            {
+                "title": "Similique tenetur commodi.",
+                "content": "Aut mollitia et animi quia quaerat. Voluptatum qui beatae voluptas fuga molestiae voluptatem. Ipsa laboriosam et tempora sit enim ducimus libero. Ea rerum aut. Hic temporibus enim.",
+                "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/775.jpg",
+                "createdAt": "2022-03-12T22:01:40.666Z",
+                "updatedAt": "2022-03-12T22:01:40.666Z",
+                "published": true,
+                "userId": null
+            }
+        ]
+    }
+}
+
+###
+PATCH http://localhost:3000/categories/1
+Content-Type: application/json
+
+{
+    "name": "electonics"
+}
+
+###
+DELETE http://localhost:3000/categories/1
+
+###
+
+get http://localhost:3000/categories
+Content-Type: application/json
+
+
+###
+
+get http://localhost:3000/categories/1
+Content-Type: application/json
+

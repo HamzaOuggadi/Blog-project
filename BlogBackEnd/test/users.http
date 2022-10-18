@@ -1,0 +1,46 @@
+ 
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "smya",
+    "email": "fifgvfi@yfdgfgfgh.com",
+    "password": "pass",
+    "role": "AUTHOR",
+    "articles":{
+        "create":
+        [
+            {
+                "title": "Similique tenetur commodi.",
+                "content": "Aut mollitia et animi quia quaerat. Voluptatum qui beatae voluptas fuga molestiae voluptatem. Ipsa laboriosam et tempora sit enim ducimus libero. Ea rerum aut. Hic temporibus enim.",
+                "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/775.jpg",
+                "createdAt": "2022-03-12T22:01:40.666Z",
+                "updatedAt": "2022-03-12T22:01:40.666Z",
+                "published": true
+            }
+        ]
+    }
+}
+
+###
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "role": "ADMIN"
+}
+
+###
+DELETE http://localhost:3000/users/1
+
+###
+
+get http://localhost:3000/users
+Content-Type: application/json
+
+
+###
+
+get http://localhost:3000/users/1
+Content-Type: application/json
+

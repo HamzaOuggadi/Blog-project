@@ -1,0 +1,33 @@
+ 
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+    "email": "ugh@hvgh.com",
+    "content": "",
+    "userId": null,
+    "articleId": null
+}
+
+###
+PATCH http://localhost:3000/comments/1
+Content-Type: application/json
+
+{
+  "content": "content test"
+}
+
+###
+DELETE http://localhost:3000/comments/1
+
+###
+
+get http://localhost:3000/comments
+Content-Type: application/json
+
+
+###
+
+get http://localhost:3000/comments/3
+Content-Type: application/json
+
